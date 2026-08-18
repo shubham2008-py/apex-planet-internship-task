@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Dev Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Web Application</h1>
+    </header>
+
+    <main class="container">
+        
+        <!-- Section 1: Image Carousel -->
+        <section class="card">
+            <h2>Image Carousel</h2>
+            <div class="carousel">
+                <img id="carousel-img" src="https://picsum.photos/id/10/600/350" alt="Carousel Image">
+                <div class="carousel-controls">
+                    <button id="prev-btn">Previous</button>
+                    <button id="next-btn">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Interactive Quiz -->
+        <section class="card">
+            <h2>Quick JavaScript Quiz</h2>
+            <div id="quiz-container">
+                <p id="question-text">Question goes here...</p>
+                <div id="options-container" class="options"></div>
+                <p id="quiz-score" class="score"></p>
+                <button id="next-q-btn" style="display: none;">Next Question</button>
+            </div>
+        </section>
+
+        <!-- Section 3: API Fetching -->
+        <section class="card">
+            <h2>Fetch Public API (Random Joke)</h2>
+            <div class="api-box">
+                <p id="joke-setup">Click the button below to load a joke!</p>
+                <p id="joke-delivery" class="punchline"></p>
+                <button id="fetch-joke-btn">Get New Joke</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
